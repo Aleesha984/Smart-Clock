@@ -1,0 +1,555 @@
+
+body {
+    background-color: #101827;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #60a5fa;
+}
+
+h2 {
+    font-size: 60px;
+    background-color: #253247;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+#day {
+    font-size: 28px;
+    color: #60a5fa;
+    margin-top: 20px;
+}
+
+#date {
+    font-size: 20px;
+    color: #d1d5db;
+}
+#formatButton {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#formatButton:hover {
+    background-color: #1d4ed8;
+}
+
+.stopwatch {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #253247;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.stopwatch h2 {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+#stopwatchDisplay {
+    font-size: 35px;
+    color: white;
+    margin: 15px;
+}
+
+.stopwatch button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.stopwatch button:hover {
+    background-color: #1d4ed8;
+}
+
+.countdown {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #253247;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.countdown h2 {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+#countdownDisplay {
+    font-size: 35px;
+    color: white;
+}
+
+.countdown input {
+    width: 75px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.countdown button {
+    padding: 10px 18px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.countdown button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Light Theme */
+body.light-mode {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Main heading */
+body.light-mode h1 {
+    color: #2563eb;
+}
+
+/* Clock */
+body.light-mode #clock {
+    background-color: #ffffff;
+    color: #111827;
+}
+
+/* Stopwatch and Countdown */
+body.light-mode .stopwatch,
+body.light-mode .countdown {
+    background-color: #ffffff;
+}
+
+/* Stopwatch and Countdown headings */
+body.light-mode .stopwatch h2,
+body.light-mode .countdown h2 {
+    color: #2563eb;
+}
+
+/* Stopwatch and Countdown displays */
+body.light-mode #stopwatchDisplay,
+body.light-mode #countdownDisplay {
+    color: #111827;
+}
+
+/* Date and Day */
+body.light-mode #day {
+    color: #2563eb;
+}
+
+body.light-mode #date {
+    color: #374151;
+}
+
+/* Theme Button */
+#themeButton {
+    padding: 12px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#themeButton:hover {
+    background-color: #1d4ed8;
+}
+
+/* Smooth theme change */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* World Clock Section */
+
+.world-clock {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #253247;
+    border-radius: 15px;
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+}
+
+.world-clock h2 {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+.world-city {
+    background-color: #35445c;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+.world-city h3 {
+    color: #60a5fa;
+    margin: 5px;
+}
+
+.world-city p {
+    color: white;
+    font-size: 24px;
+    margin: 8px;
+}
+
+/* Light Mode */
+
+body.light-mode .world-clock {
+    background-color: white;
+}
+
+body.light-mode .world-city {
+    background-color: #e5e7eb;
+}
+
+body.light-mode .world-city p {
+    color: #111827;
+}
+
+/* Professional Dashboard Layout */
+
+.dashboard {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+/* Main Clock */
+
+.main-clock {
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background: #202b40;
+}
+
+/* Features Grid */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Feature Cards */
+
+.feature-card {
+    padding: 25px;
+    border-radius: 15px;
+    background: #202b40;
+    text-align: center;
+}
+
+/* World Clock */
+
+.world-clock {
+    grid-column: span 2;
+}
+
+.world-cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.world-city {
+    padding: 15px;
+    border-radius: 10px;
+    background: #2d3a52;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 700px) {
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .world-clock {
+        grid-column: span 1;
+    }
+
+    .world-cities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .world-cities {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Fix World Clock Layout */
+
+.world-clock {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.world-cities {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.world-city {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+/* Tablet and Mobile */
+
+@media (max-width: 700px) {
+    .world-cities {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .world-cities {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Smooth Hover Effects */
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Button Click */
+button:active {
+    transform: translateY(0);
+}
+
+/* Feature Card Animation */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Feature Card Hover */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Main Clock Animation */
+.main-clock {
+    transition: box-shadow 0.3s ease;
+}
+
+.main-clock:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/* STEP 2: DESIGN IMPROVEMENTS    */
+/* ============================= */
+
+/* Overall Typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+/* Main Heading */
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Main Digital Clock */
+.main-clock h2 {
+    font-size: 65px;
+    font-weight: 700;
+    margin: 10px 0;
+    letter-spacing: 3px;
+}
+
+/* Section Headings */
+.feature-card h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Timer Numbers */
+.feature-card h3 {
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+/* Date and Day */
+.main-clock h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.main-clock p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* ============================= */
+/* SPACING AND COLORS            */
+/* ============================= */
+
+/* Feature Cards */
+.feature-card {
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Main Clock */
+.main-clock {
+    padding: 45px 20px;
+    border-radius: 18px;
+}
+
+/* World City Cards */
+.world-city {
+    padding: 20px 12px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.world-city h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.world-city p {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    margin: 5px;
+}
+
+/* ============================= */
+/* LIGHT MODE IMPROVEMENTS       */
+/* ============================= */
+
+body.light-mode .main-clock,
+body.light-mode .feature-card {
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .world-city {
+    border: 1px solid #e2e8f0;
+}
+
+/* ============================= */
+/* PROFESSIONAL FOOTER           */
+/* ============================= */
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px 15px;
+    border-top: 1px solid #344158;
+}
+
+.footer h2 {
+    font-size: 23px;
+    color: #60a5fa;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    margin-top: 18px;
+    color: #94a3b8;
+}
+
+/* Light Mode Footer */
+
+body.light-mode .footer {
+    border-top: 1px solid #d1d5db;
+}
+
+body.light-mode .footer p {
+    color: #475569;
+}
+
+body.light-mode .footer .copyright {
+    color: #64748b;
+}

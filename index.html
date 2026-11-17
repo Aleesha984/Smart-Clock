@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Smart Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>My Smart Clock</h1>
+
+        <button id="themeButton" onclick="changeTheme()">
+            Switch to Light Mode
+        </button>
+    </header>
+
+    <!-- Main Clock Section -->
+    <section class="main-clock">
+
+        <h2 id="clock">00:00:00</h2>
+
+        <button onclick="changeFormat()" id="formatButton">
+            Switch to 12-Hour Format
+        </button>
+
+        <h3 id="day">Monday</h3>
+
+        <p id="date">01 January 2026</p>
+
+    </section>
+
+    <!-- Features Section -->
+    <div class="features-grid">
+
+        <!-- Stopwatch -->
+        <div class="stopwatch feature-card">
+
+            <h2>Stopwatch</h2>
+
+            <h3 id="stopwatchDisplay">00:00:00</h3>
+
+            <button onclick="startStopwatch()">Start</button>
+
+            <button onclick="pauseStopwatch()">Pause</button>
+
+            <button onclick="resetStopwatch()">Reset</button>
+
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown feature-card">
+
+            <h2>Countdown Timer</h2>
+
+            <h3 id="countdownDisplay">00:00:00</h3>
+
+            <input type="number" id="countHours"
+                placeholder="Hours" min="0" max="99">
+
+            <input type="number" id="countMinutes"
+                placeholder="Minutes" min="0" max="59">
+
+            <input type="number" id="countSeconds"
+                placeholder="Seconds" min="0" max="59">
+
+            <br>
+
+            <button onclick="startCountdown()">Start</button>
+
+            <button onclick="pauseCountdown()">Pause</button>
+
+            <button onclick="resetCountdown()">Reset</button>
+
+        </div>
+
+        <!-- World Clock -->
+        <div class="world-clock feature-card">
+
+            <h2>World Clock</h2>
+
+            <div class="world-cities">
+
+                <div class="world-city">
+                    <h3>Pakistan - Karachi</h3>
+                    <p id="pakistanTime">00:00:00</p>
+                </div>
+
+                <div class="world-city">
+                    <h3>United Kingdom - London</h3>
+                    <p id="ukTime">00:00:00</p>
+                </div>
+
+                <div class="world-city">
+                    <h3>UAE - Dubai</h3>
+                    <p id="uaeTime">00:00:00</p>
+                </div>
+
+                <div class="world-city">
+                    <h3>USA - New York</h3>
+                    <p id="usaTime">00:00:00</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+
+    <h2>My Smart Clock</h2>
+
+    <p>
+        Your smart companion for time management.
+    </p>
+
+    <p class="copyright">
+        © 2026 My Smart Clock. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
